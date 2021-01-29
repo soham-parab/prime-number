@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Is your birthdate a prime number?</title>
+    <title>Is your birth date a prime number?</title>
+
+    <style>
+        :root {
+            --primary-color: #3a6d22;
+            --grey: #374151;
+            --off: #EFF6FF;
+        }
+
+
+
+        .nav-container {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+
+        .nav-container .nav-div {
+            text-align: center;
+
+
+
+        }
+
+        #output {
+            width: 50%;
+            height: 10vh;
+
+        }
+
+
+        .para {
+            text-align: center;
+            padding:1rem;
+        }
+
+        textarea{
+            position: relative;
+            display:block;
+            margin:auto;                       
+            align-content:center;
+            padding:0.2rem;
+        }
+
+        #clickButton{
+            position: relative;
+            margin:auto;
+            border-radius: 10%;
+            display:flex;
+            justify-content: center;
+            padding:0.2rem 0.2rem;
+            top:3vh;
+
+        }
+
+        #output{
+            display:block;
+            position: relative;
+            margin:auto;
+            top:7vh;
+
+        }
+    </style>
 </head>
+
+
 <body>
-    
+
+    <nav class="nav-container">
+
+        <div class="nav-div">
+            <h1>Is your birthdate a prime number? Find out now!</h1>
+        </div>
+    </nav>
+
+
+   <p class = "para">Enter your birth date in DD/MM  </p>
+   <textarea name="textarea" id="input-date" cols="20" rows="2"></textarea>
+
+
+
+    <button id="clickButton">Find out</button>
+
+    <div id="output-div"> </div>
+
+    <button id="output"></button>
+
+    <script src="/app.js" type="text/javascript"></script>
+
+
+
+
 </body>
+
 </html>
