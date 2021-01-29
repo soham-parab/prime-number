@@ -2,20 +2,20 @@ var button = document.querySelector("#click-button");
 var inputDate = document.querySelector("#input-date");
 var outputDiv = document.querySelector("#output");
 
-var dateIsPrime;
+var dateIsNotPrime;
 
 function isYourBirthDatePrime(input) {
 
     for (var i = 2; i < (input); i++) 
     {
         if ([input % i] == 0) {
-            var dateIsPrime = true;
+            var dateIsNotPrime = true;
             break;
         }
     
     }
 
-    if (dateIsPrime){
+    if (dateIsNotPrime){
 
         var result = ("Your birth date is not a prime number!")
 
